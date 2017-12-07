@@ -1,0 +1,16 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<!-- Builds all *.sln files under this repository. -->
+	<ItemGroup>
+		<SolutionFiles Include="**/*.sln" />
+	</ItemGroup>
+	
+	<Target Name="Build">
+		<MSBuild Projects="@(SolutionFiles)" Targets="Rebuild" />
+	</Target>
+
+	<Target Name="BuildAll">		
+		<CallTarget Targets="Build" />
+	</Target>
+
+</Project>
