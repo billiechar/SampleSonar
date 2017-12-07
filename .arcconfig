@@ -1,6 +1,6 @@
 {
-  "project_id" : "Sonar",
-  "conduit_uri" : "http://auton-phab.glalab.local/",
+  "project_id" : "Auton",
+  "conduit_uri" : "http://phabricator.uklab.local/",
   "base" : "git:merge-base(origin/master)",
   "arc.land.onto.default" : "master"
 }
